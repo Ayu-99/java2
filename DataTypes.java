@@ -3,38 +3,29 @@ public class DataTypes {
 
 	public static void main(String[] args) {
 		/*
-		 * By default , each number is represented in 32 bits
-		 * Number:
-		 * byte  8bits
-		 * short 16 bits
-		 * int   32 bits
-		 * long  64 bits
-		 *
-		 * byte :8 bits->2pow8
-		 * 256/2-> -128 to 0 to 127
+		 *  Floating points
+		 *  float  32 bits
+		 *  double 64 bits
 		 */
+		byte discount = 20;
+		long phone = 9915571177L;
 		
-		byte number = -128;
-		System.out.println("number is: "+number);
+		//byte data = 20L; ->error bcoz we are changing the defalut size 32 bits unnecceraly
 		
-		long phoneNumber =  7837822586L;
+		//float pi= 3.14F; // now it will be stored as 32 bits in constant pool
+		double pi= 3.14;
 		
-		int johnsPhoneNumber = (int)phoneNumber;// DownCasting
+		//char ch = 'A'; | 16 bits
+		char ch ='\u20b9';
+		System.out.println("ch is:"+ch);
 		
-		//in downcasting we loose our data
+		boolean isInternetOn = true; // 8 bits -> 1 bit(1/0)
+		System.out.println("is internet on"+isInternetOn);
 		
-		System.out.println(johnsPhoneNumber); 
-		
-		long age = number; // UpCasting
-		System.out.println(age);
-		
-		byte jacksAge= (byte)130;
-		System.out.println("Jacks Age is:" +jacksAge);
-		
+		//primitive types : work on values
 		
 		
 		
-
 	}
 
 }
